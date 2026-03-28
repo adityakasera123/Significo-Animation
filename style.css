@@ -1,3 +1,7 @@
+*::selection{
+    background-color: #ee9d71;
+}
+
 body[theme="black"]{
     background: #111;
 }
