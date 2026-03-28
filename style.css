@@ -1,0 +1,28 @@
+body[theme="black"]{
+    background: #111;
+}
+body[theme="black"] .section{
+  color: #fff;
+}
+body[theme="salmon"]{
+    background:salmon;
+}
+body[theme="salmon"]{
+    color:rgb(100, 51, 46);
+}
+body[theme="white"]{
+    background: #fff;
+}
+body[theme="white"] .section{
+    color: #111;
+}
+body[theme="cyan"]{
+    background: #83becc;
+}
+body[theme="cyan"] .section{
+    color: #1f2f32;
+}
+@font-face {
+    font-family: machina;
+    src: url(/text1.woff);
+}
