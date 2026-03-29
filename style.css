@@ -1,30 +1,42 @@
+
+:root{
+    --salmon:#fa8072;
+    --dsalmon:#64332e;
+    --black:#111;
+    --white:#fff;
+    --cyan:#aedee0;
+    --dcyan:#172325;
+
+}
+
+
+
 *::selection{
     background-color: #ee9d71;
 }
-
 body[theme="black"]{
-    background: #111;
+    background:var(--black);
 }
 body[theme="black"] .section{
-  color: #fff;
+  color: var(--white);
 }
 body[theme="salmon"]{
-    background:salmon;
+    background:var(--salmon);
 }
 body[theme="salmon"]{
-    color:rgb(100, 51, 46);
+    color:var(--dsalmon);
 }
 body[theme="white"]{
-    background: #fff;
+    background:var(--white);
 }
 body[theme="white"] .section{
-    color: #111;
+    color:var(--black);
 }
 body[theme="cyan"]{
-    background: #83becc;
+    background: var(--cyan);
 }
 body[theme="cyan"] .section{
-    color: #1f2f32;
+    color: var(--dcyan);
 }
 @font-face {
     font-family: machina;
