@@ -9,7 +9,9 @@
 
 }
 
-
+.vdodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
 
 *::selection{
     background-color: #ee9d71;
