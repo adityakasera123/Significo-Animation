@@ -1,10 +1,10 @@
-gsap.set(".slidesm",{scale:5})
+function homePageAnimation(){
+    gsap.set(".slidesm",{scale:5})
 var tl = gsap.timeline({
   scrollTrigger:{
         trigger:".home",
         start:"top top",
-        end:"bottom top",
-        pin:true,
+        end:"bottom bottom",
         scrub:2,
         } 
 })
@@ -33,3 +33,18 @@ tl.to(".slidesm",{
    ease:Power4,
 },'b')
 
+
+}
+homePageAnimation();
+
+gsap.to(".slide",{
+    scrollTrigger:{
+        trigger:".real",
+        start:"top top",
+        end:"bottom bottom",
+        markers:true,
+        scrub:1
+    },
+    xPercent:-335,
+    ease:Power4
+})
