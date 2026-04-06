@@ -20,6 +20,7 @@ body[theme="black"]{
     background:var(--black);
 }
 body[theme="black"] .section{
+    border:#fff;
   color: var(--white);
 }
 body[theme="salmon"]{
