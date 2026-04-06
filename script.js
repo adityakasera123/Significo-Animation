@@ -135,7 +135,6 @@ function capsulesAnimation(){``
             trigger:".capsules",
             start:"top 70%",
             end:"bottom bottom",
-            markers:true,
             scrub:1
         },
         y:0,
@@ -143,6 +142,23 @@ function capsulesAnimation(){``
     })
 }
 
+function bodyColorAnimation(){
+    document.querySelectorAll(".section")
+.forEach(function(e){
+    ScrollTrigger.create({
+        trigger: e,
+        start:"top 50%",
+        end:"bottom 50%",
+    
+        onEnter:function(){
+            document.body.setAttribute("theme",e.dataset.color);
+        },
+        onEnterBack(){
+             document.body.setAttribute("theme",e.dataset.color);
+        }
+    })
+})
+}
 
 homePageAnimation();
 realPageAnimation();
@@ -150,3 +166,4 @@ teamAnimation();
 paraAnimation();
 loco();
 capsulesAnimation();
+bodyColorAnimation();

@@ -9,6 +9,10 @@
 
 }
 
+body{
+    transition: background-color ease-out .5s;
+}
+
 .vdodiv{
     clip-path: circle(var(--clip) at 50% 50%);
 }
