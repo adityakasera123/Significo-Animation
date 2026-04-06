@@ -89,7 +89,7 @@ gsap.to(".textpara span", {
         start:"top 70%",
         end:"bottom 95%",
 
-        scrub:.2
+        scrub:1
     },
     opacity:1,
     stagger:.03,
@@ -114,7 +114,7 @@ gsap.to(".textpara1 span", {
         start:"top 90%",
         end:"bottom 95%",
 
-        scrub:.2
+        scrub:1
     },
     opacity:1,
     stagger:.03,
@@ -122,10 +122,31 @@ gsap.to(".textpara1 span", {
 })
 }
 
+function loco(){
+    (function(){
+const locomotiveScroll = new LocomotiveScroll();
+})();
+
+}
+
+function capsulesAnimation(){``
+    gsap.to(".capsule:nth-child(2)",{
+        scrollTrigger:{
+            trigger:".capsules",
+            start:"top 70%",
+            end:"bottom bottom",
+            markers:true,
+            scrub:1
+        },
+        y:0,
+        ease:Power4
+    })
+}
+
 
 homePageAnimation();
 realPageAnimation();
 teamAnimation();
 paraAnimation();
-
-
+loco();
+capsulesAnimation();
