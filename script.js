@@ -60,12 +60,30 @@ el.addEventListener("mousemove",function(dets){
         x: gsap.utils.mapRange(0, window.innerWidth, -200,200, dets.clientX), 
         ease:Power4,
         duration:.5})
+
+        gsap.to(this.querySelector(".bluelayer"),{
+            height:"100%",
+            duration:-3,
+            ease:Power4.out,
+             opacity: 1
+            
+        })
 })
+
+
+
 el.addEventListener("mouseleave", function(dets){
     gsap.to(this.querySelector(".picture"), 
          {opacity:0,
          ease:Power4, 
          duration:.5})
+
+         gsap.to(this.querySelector(".bluelayer"),{
+            height:"0%",
+             opacity: -10,
+             duration:1,
+              ease:Power4
+        })
 })
 })
 }
@@ -159,6 +177,18 @@ function bodyColorAnimation(){
     })
 })
 }
+
+let cr=document.querySelector(".craft")
+var tl=gsap.timeline({
+    scrollTrigger:{
+        trigger:".craft",
+        start:"top top",
+        end:"bottom bottom",
+        scrub:2,
+        markers:true
+        } 
+})
+
 
 homePageAnimation();
 realPageAnimation();
