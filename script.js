@@ -110,7 +110,7 @@ gsap.to(".textpara span", {
         scrub:1
     },
     opacity:1,
-    stagger:.03,
+    stagger:.02,
     ease:Power4
 })
 
@@ -135,7 +135,7 @@ gsap.to(".textpara1 span", {
         scrub:1
     },
     opacity:1,
-    stagger:.03,
+    stagger:.02,
     ease:Power4
 })
 }
@@ -177,17 +177,6 @@ function bodyColorAnimation(){
     })
 })
 }
-
-let cr=document.querySelector(".craft")
-var tl=gsap.timeline({
-    scrollTrigger:{
-        trigger:".craft",
-        start:"top top",
-        end:"bottom bottom",
-        scrub:2,
-        markers:true
-        } 
-})
 
 
 homePageAnimation();
