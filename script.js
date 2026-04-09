@@ -110,8 +110,8 @@ gsap.to(".textpara span", {
         scrub:1
     },
     opacity:1,
-    stagger:.02,
-    ease:Power4
+    stagger:.3,
+    ease:Power2
 })
 
 let clutter1 = "";
@@ -135,8 +135,8 @@ gsap.to(".textpara1 span", {
         scrub:1
     },
     opacity:1,
-    stagger:.02,
-    ease:Power4
+    stagger:3,
+    ease:Power2
 })
 }
 
