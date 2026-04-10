@@ -178,11 +178,32 @@ function bodyColorAnimation(){
 })
 }
 
+function footerAnimation1(){
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
 
+    gsap.from(".discovers .span", {
+        y: 120,
+        opacity: 0,
+
+       stagger:0.3,
+        scrollTrigger: {
+            trigger: ".discover",
+             scroller: "",
+            start: "top 80%",
+            end: "bottom 60%",
+           
+         scrub:2,
+        }
+    });
+});
+}
+
+loco();
 homePageAnimation();
 realPageAnimation();
 teamAnimation();
 paraAnimation();
-loco();
 capsulesAnimation();
 bodyColorAnimation();
+footerAnimation1();
