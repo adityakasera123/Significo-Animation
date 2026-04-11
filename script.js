@@ -199,6 +199,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 }
 
+function significoAnimation(){
+    gsap.from(".Signifco span",{
+  y:120,
+  duration:1,
+  stagger:0.3,
+  scrollTrigger:{
+    trigger:".Signifco",
+    start:"top 95%",
+    end:"bottom 97%",
+    scrub:2,
+    markers:true
+  }
+});
+}
+
+significoAnimation();
+
+
 loco();
 homePageAnimation();
 realPageAnimation();

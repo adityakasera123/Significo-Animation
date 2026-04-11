@@ -58,3 +58,8 @@ body[theme="cyan"] .section{
     font-family: text3;
     src: url(./text3.ttf);
 }
+
+.Signifco span{
+    display: inline-block;
+
+}
