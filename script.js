@@ -205,7 +205,7 @@ function significoAnimation(){
     start:"top 95%",
     end:"bottom 97%",
     scrub:2,
-    markers:true
+    // markers:true
   }
 });
 }
