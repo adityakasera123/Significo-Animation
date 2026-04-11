@@ -63,3 +63,6 @@ body[theme="cyan"] .section{
     display: inline-block;
 
 }
+.discover span{
+    display: inline-block;
+}

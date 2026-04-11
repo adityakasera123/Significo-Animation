@@ -179,24 +179,19 @@ function bodyColorAnimation(){
 }
 
 function footerAnimation1(){
-document.addEventListener("DOMContentLoaded", () => {
-    gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".discovers .span", {
-        y: 120,
-        opacity: 0,
 
-       stagger:0.3,
+    gsap.from(".discover span", {
+        y: 20,
+        duration:1,
+       stagger:0.2,
         scrollTrigger: {
             trigger: ".discover",
-             scroller: "",
-            start: "top 80%",
-            end: "bottom 60%",
-           
+            start: "top 70%",
+            end: "bottom 70%",
          scrub:2,
         }
     });
-});
 }
 
 function significoAnimation(){
@@ -209,7 +204,7 @@ function significoAnimation(){
     start:"top 95%",
     end:"bottom 97%",
     scrub:2,
-    markers:true
+    // markers:true
   }
 });
 }
