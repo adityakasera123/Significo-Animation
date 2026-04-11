@@ -189,6 +189,7 @@ function footerAnimation1(){
             trigger: ".discover",
             start: "top 70%",
             end: "bottom 70%",
+        //    markers:true,
          scrub:2,
         }
     });
@@ -204,7 +205,7 @@ function significoAnimation(){
     start:"top 95%",
     end:"bottom 97%",
     scrub:2,
-    // markers:true
+    markers:true
   }
 });
 }
