@@ -221,3 +221,17 @@ paraAnimation();
 capsulesAnimation();
 bodyColorAnimation();
 footerAnimation1();
+
+
+
+const navbar = document.querySelector(".nav");
+
+window.addEventListener("wheel", (e) => {
+  if (e.deltaY > 0) {
+    // scroll down
+    navbar.style.transform = "translateY(-100%)";
+  } else {
+    // scroll up
+    navbar.style.transform = "translateY(0)";
+  }
+});

@@ -6,7 +6,7 @@
     --white:#fff;
     --cyan:#aedee0;
     --dcyan:#172325;
-
+  
 }
 
 body{
@@ -45,6 +45,8 @@ body[theme="cyan"]{
 body[theme="cyan"] .section{
     color: var(--dcyan);
 }
+
+
 @font-face {
     font-family: machina;
     src: url(/text1.woff);
@@ -65,4 +67,7 @@ body[theme="cyan"] .section{
 }
 .discover span{
     display: inline-block;
+}
+.nav{
+  transition: transform 0.99ms ease;
 }
