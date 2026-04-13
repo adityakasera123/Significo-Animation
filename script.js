@@ -210,20 +210,7 @@ function significoAnimation(){
 });
 }
 
-significoAnimation();
-
-
-loco();
-homePageAnimation();
-realPageAnimation();
-teamAnimation();
-paraAnimation();
-capsulesAnimation();
-bodyColorAnimation();
-footerAnimation1();
-
-
-
+function Nav(){
 const navbar = document.querySelector(".nav");
 
 window.addEventListener("wheel", (e) => {
@@ -235,3 +222,42 @@ window.addEventListener("wheel", (e) => {
     navbar.style.transform = "translateY(0)";
   }
 });
+}
+
+function loaderAnimation(){
+
+let tl=gsap.timeline()
+
+tl.from("#loader h3",{
+  x:40,
+  opacity:0,
+  duration:1,
+  stagger:0.1,
+})
+tl.to("#loader h3",{
+  x:-10,
+  opacity:0,
+  duration:1,
+  stagger:0.1,
+})
+
+tl.to("#loader",{
+  opacity:0,
+})
+
+tl.to("#loader",{
+  display:"none",
+})
+}
+
+significoAnimation();
+loco();
+homePageAnimation();
+realPageAnimation();
+teamAnimation();
+paraAnimation();
+capsulesAnimation();
+bodyColorAnimation();
+footerAnimation1();
+Nav();
+loaderAnimation();
